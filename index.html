@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <link href="dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link href="src/output.css" rel="stylesheet">
     <title>Portfolio</title>
     <script>
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -36,16 +36,16 @@
                                 <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Beranda</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Tentang saya</a>
+                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">About</a>
                             </li>
                             <li class="group">
                                 <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex  group-hover:text-primary dark:text-white">Portfolio</a>
                             </li>
                             <li class="group">
-                                <a href="#clients" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Clients</a>
+                                <a href="#clients" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Skills</a>
                             </li>
                             <li class="group">
-                                <a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Blog</a>
+                                <a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Certificate</a>
                             </li>
                             <li class="group">
                                 <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact</a>
@@ -71,26 +71,25 @@
     <!-- Header End -->
 
     <!-- Hero Section Start-->
-    <section id="home" class="pt-40 dark:bg-dark">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-primary md:text-xl">Hai👋, saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white"> ilmarusady</span></h1>
-                    <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Web Developer & <span class="text-dark dark:text-white"> Music Producer </span></h2>
-                    <p class="font-medium text-secondary mb-10 leading-relaxed">Bela Lorem ipsum dolor sit amet.. <span class="text-dark font-bold dark:text-white"> ya! </span></p>
-
-                    <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi saya</a>
-                </div>
-
-                <div class="w-full self-end px-4 lg:w-1/2">
-                    <div class="relative mt-10 lg:mt-0 lg:right-0">
-                        <img src="dist/img/gojo.png" alt="gojo" class="max-w-full mx-auto relative z-10">
-                        <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 md:scale-130">
-                            <svg width="320" height="320" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#14b8a6" d="M40.7,-41C55.6,-25.9,72.5,-12.9,70.6,-1.9C68.7,9.1,48,18.2,33.1,34.7C18.2,51.1,9.1,75,-1,76C-11.1,77,-22.2,55.1,-37.1,38.7C-52,22.2,-70.7,11.1,-73.2,-2.5C-75.6,-16,-61.9,-32.1,-47,-47.2C-32.1,-62.3,-16,-76.5,-1.6,-75C12.9,-73.4,25.9,-56.1,40.7,-41Z" transform="translate(100 100) scale(0.9)" />
-                          </svg>
-                        </span>
-                    </div>
+    <section id="home" class="flex pt-40 dark:bg-dark h-screen">
+        <div class="container flex justify-center">
+            <div class="flex">
+                <div class="w-full self-center px-4 break-words overflow-hidden">
+                    <h1 class="text-xl font-semibold text-basic dark:text-primary md:text-4xl">Hay there👋 my name<span class="block font-bold text-dark text-3xl mt-1 lg:text-5xl dark:text-white">Ilmarusady</span></h1>
+                    <h2 class="font-medium text-secondary text-lg mb-4 mt-1 lg:text-3xl">I am a <span class="text-dark dark:text-white" id="typewriter"></span></h2>
+                    <p class="font-medium text-secondary mb-7 leading-relaxed whitespace-normal">I am creative developer based in Yogyakarta and I am very passionate and dedicated to my work</p>
+                    
+                    <a href="#contact" class="container-button">
+                        <div class="div-talk bt-1"></div>
+                        <div class="div-talk bt-2"></div>
+                        <div class="div-talk bt-3"></div>
+                        <div class="div-talk bt-4"></div>
+                        <div class="div-talk bt-5"></div>
+                        <div class="div-talk bt-6"></div>
+                        <button class="b-talk"></button>
+                    </a>
+                    
+                    <!-- <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Let's Talk</a> -->
                 </div>
             </div>
         </div>
@@ -101,15 +100,15 @@
     <section id="about" class="pt-36 pb-32 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
-                <div class="w-full px-4 mb-10 lg:w-1/2">
-                    <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl dark:text-white">Yuk, Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, consequuntur!</h2>
-                    <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil eligendi sequi laborum.</p>
+                <div class="w-full px-4 flex flex-col items-center mb-10">
+                    <h4 class="font-bold text-center text-basic dark:text-primary text-xl mb-3 lg:text-2xl">About Me</h4>
+                    <!-- <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl dark:text-white">Shortly Information</h2> -->
+                    <p class="font-medium text-base text-secondary max-w-2xl lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque impedit ut ullam quisquam pariatur enim est deleniti perferendis fugiat placeat. Consequatur reiciendis pariatur incidunt molestias praesentium.</p>
                 </div>
 
-                <div class="w-full px-4 lg:w-1/2">
-                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Mari berteman</h3>
-                    <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid officiis, beatae inventore explicabo quaerat nobis debitis accusantium?</p>
+                <div class="w-full px-4 flex flex-col items-center">
+                    <h3 class="font-semibold text-dark text-xl mb-4 lg:text-3xl lg:pt-7 dark:text-white">Lets's Be Friends</h3>
+                    <p class="font-medium text-base text-secondary mb-6 max-w-xl lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium voluptatum amet itaque aperiam odit dolore fuga expedita!</p>
                     <div class="flex items-center">
                         <!-- youtube -->
                         <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
@@ -139,57 +138,109 @@
     <!-- About Section End -->
 
     <!-- Portfolio Section Start -->
-    <section id="portfolio" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
-        <div class="container">
+    <section id="portfolio" class="pt-36 pb-32 bg-slate-100 dark:bg-slate-800">
+        <div class="container mySwiper swiper">
             <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Project Terbaru</h2>
-                    <p class="font-medium text-md text-secondary md:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius nam saepe veritatis voluptates laudantium voluptatum!</p>
+                <div class="max-w-xl mx-auto text-center mb-12">
+                    <h4 class="font-semibold text-lg text-basic dark:text-primary mb-2 lg:text-2xl">Portfolio</h4>
+                    <h2 class="font-bold text-dark mb-4 text-3xl sm:text-4xl md:text-4xl dark:text-white">Most Recent Work</h2>
                 </div>
             </div>
 
-            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-                <div class="mb-12 p-4 md:w-1/2">
+            <!-- <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"> -->
+            <div class="swiper-wrapper">
+                <!-- Project 1 -->
+                <div class="mb-14 max-sm:p-8 p-7 swiper-slide">
+                    <div class="rounded-md shadow-md">
+                        <img src="dist/img/portfolio/1.png" alt="Project Page" width="w-full">
+                    </div>
+                    <p class="font-medium text-base text-secondary mt-5">Web</p>
+                    <h3 class="font-semibold text-xl text-dark dark:text-white mb-3">Modern Website</h3>
+                    <a href="#" class="dark:text-white bg-primary p-1 px-3 rounded-md inline-flex gap-x-3 group" target="_blank">View More 
+                        <svg width="18" class="fill-current transition duration-300 group-hover:-translate-x-2" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 243.58"><path fill-rule="nonzero" d="M138.43 243.58 0 122.84 140.47 0l20.92 23.91-94.92 83 445.53-.42v31.75l-445.54.41 92.89 81.02z"/></svg>
+                    </a>
+                </div>
+                <!-- Project 2 -->
+                <div class="mb-14 max-sm:p-8 p-7 swiper-slide">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/1.png" alt="Project Page" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Ilmarusady Project Page</h3>
-                    <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus molestiae nam.</p>
+                    <p class="font-medium text-base text-secondary mt-5">React</p>
+                    <h3 class="font-semibold text-xl text-dark dark:text-white mb-3">E-commerce Store</h3>
+                    <a href="#" class="dark:text-white bg-primary p-1 px-4 rounded-md inline-flex gap-x-3 group" target="_blank">View More 
+                        <svg width="18" class="fill-current transition duration-300 group-hover:-translate-x-2" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 243.58"><path fill-rule="nonzero" d="M138.43 243.58 0 122.84 140.47 0l20.92 23.91-94.92 83 445.53-.42v31.75l-445.54.41 92.89 81.02z"/></svg>
+                    </a>
                 </div>
-                <div class="mb-12 p-4 md:w-1/2">
+                <!-- Project 3 -->
+                <div class="mb-14 max-sm:p-8 p-7 swiper-slide">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/1.png" alt="Project Page" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Ilmarusady E-commenrce</h3>
-                    <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus molestiae nam.</p>
+                    <p class="font-medium text-base text-secondary mt-5">Design</p>
+                    <h3 class="font-semibold text-xl text-dark dark:text-white mb-3">Application Design</h3>
+                    <a href="#" class="dark:text-white bg-primary p-2 px-4 rounded-md" target="_blank">View More</a>
                 </div>
-                <div class="mb-12 p-4 md:w-1/2">
+                <!-- Project 4 -->
+                <div class="mb-14 max-sm:p-8 p-7 swiper-slide">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/1.png" alt="Project Page" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Ilmarusady TEctinical Documentattion</h3>
-                    <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus molestiae nam.</p>
+                    <p class="font-medium text-base text-secondary mt-5">Animation</p>
+                    <h3 class="font-semibold text-xl text-dark dark:text-white mb-3">Animation Prototype</h3>
+                    <a href="#" class="dark:text-white bg-primary p-2 px-4 rounded-md" target="_blank">View More</a>
                 </div>
-                <div class="mb-12 p-4 md:w-1/2">
+                <!-- Project 5 -->
+                <div class="mb-14 max-sm:p-8 p-7 swiper-slide">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/1.png" alt="Project Page" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Ilmarusady Tribute Page</h3>
-                    <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus molestiae nam.</p>
+                    <p class="font-medium text-base text-secondary mt-5">Rest API</p>
+                    <h3 class="font-semibold text-xl text-dark dark:text-white mb-3">Movie Database</h3>
+                    <a href="#" class="dark:text-white bg-primary p-2 px-4 rounded-md" target="_blank">View More</a>
                 </div>
+                <!-- Project 6 -->
+                <div class="mb-14 max-sm:p-8 p-7 swiper-slide">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/portfolio/1.png" alt="Project Page" width="w-full">
+                    </div>
+                    <p class="font-medium text-base text-secondary mt-5">Web</p>
+                    <h3 class="font-semibold text-xl text-dark dark:text-white mb-3">Music Player</h3>
+                    <a href="#" class="dark:text-white bg-primary p-2 px-4 rounded-md" target="_blank">View More</a>
+                </div>
+                <!-- Project 7 -->
+                <div class="mb-14 max-sm:p-8 p-7 swiper-slide">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/portfolio/1.png" alt="Project Page" width="w-full">
+                    </div>
+                    <p class="font-medium text-base text-secondary mt-5">Web</p>
+                    <h3 class="font-semibold text-xl text-dark dark:text-white mb-3">Company Portfolio</h3>
+                    <a href="#" class="dark:text-white bg-primary p-2 px-4 rounded-md" target="_blank">View More</a>
+                </div>  
             </div>
+
+            <div class="swiper-button-next after:content-[''] -right-1 max-sm:right-1 text-primary h-20 top-[43%]" style="--swiper-navigation-size: 55px;">
+                <!-- heroicons -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z" clip-rule="evenodd" />
+                  </svg>
+            </div>
+            <div class="swiper-button-prev after:content-[''] -left-1 max-sm:left-1 text-primary h-20 top-[43%]" style="--swiper-navigation-size: 55px;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M13.28 3.97a.75.75 0 010 1.06L6.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5a.75.75 0 010-1.06l7.5-7.5a.75.75 0 011.06 0zm6 0a.75.75 0 010 1.06L12.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5a.75.75 0 010-1.06l7.5-7.5a.75.75 0 011.06 0z" clip-rule="evenodd" style="stroke-width: 77px;" />
+                  </svg>                  
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <!-- Portfolio Section End -->
 
-    <!-- Clients Section Start -->
-    <section id="clients" class="pt-36 pb-32 bg-slate-800 dark:bg-slate-300">
+    <!-- Experience Section Start -->
+    <section id="clients" class="pt-36 pb-32 bg-slate-800 dark:bg-slate-200">
         <div class="container">
             <div class="w-full px-4">
                 <div class="mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Clients</h4>
-                    <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-dark">Yang Pernah Berkerja Sama</h2>
+                    <h4 class="font-semibold text-lg text-basic dark:text-primary mb-2 lg:text-2xl">Experience</h4>
+                    <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl md:text-3xl dark:text-dark">Skills Achieved and Continuously Improved</h2>
                     <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates quae iure laudantium.</p>
                 </div>
             </div>
@@ -197,30 +248,33 @@
             <div class="w-full px-4">
                 <div class="flex flex-wrap items-center justify-center">
                     <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/img/Clients/google.png" alt="google">
+                        <img src="dist/img/exp/new-php-logo.png" alt="php">
                     </a>
                     <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/img/Clients/gojek.png" alt="gojek">
+                        <img src="dist/img/exp/javascript_logo.png" alt="javascript">
                     </a>
                     <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/img/Clients/tokopedia.png" alt="tokopedia">
+                        <img src="dist/img/exp/tailwindcss_logo.png" alt="tailwindcss">
                     </a>
                     <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/img/Clients/traveloka.png" alt="traveloka">
+                        <img src="dist/img/exp/bootstrap_logo.png" alt="bootstrap">
+                    </a>
+                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="dist/img/exp/reactjs_logo.png" alt="reactjs">
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Clients Section End -->
+    <!-- Experience Section End -->
 
-    <!-- Blog Section Start -->
+    <!-- Blog Section Start -->   
     <section id="blog" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Tulisan Terkini</h2>
+                    <h4 class="font-semibold text-lg text-basic dark:text-primary mb-2 lg:text-2xl">Blog</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-3xl md:text-4xl dark:text-white">Tulisan Terkini</h2>
                     <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sint soluta cupiditate ducimus dolore.</p>
                 </div>
             </div>
@@ -272,8 +326,8 @@
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Hubungi Kami</h2>
+                    <h4 class="font-semibold text-lg text-basic dark:text-primary mb-2 lg:text-2xl">Contact</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-3xl lg:text-4xl dark:text-white">Hubungi Kami</h2>
                     <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sapiente!</p>
                 </div>
             </div>
@@ -293,7 +347,7 @@
                         <textarea type="pesan" id="pesan" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
                     </div>
                     <div class="w-full px-4">
-                        <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+                        <button class="bg-basic text-base font-semibold text-white  dark:bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
                 </div>
                 </div>
             </form>
@@ -306,15 +360,15 @@
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-                    <h2 class="font-bold text-4xl text-white mb-5">WPU</h2>
-                    <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
-                    <p>ilmarusdy01@gmail.com</p>
-                    <p>jl llllll</p>
-                    <p>Jogja</p>
+                    <h2 class="font-bold text-3xl text-white mb-4">Rusdy</h2>
+                    <h3 class="font-bold text-2xl mb-2">Contact Me</h3>
+                    <p class="mb-2">ilmarusdy01@gmail.com</p>
+                    <p class="mb-2">082328424306</p>
+                    <p class="mb-2">Yogyakarta</p>
                 </div>
                 
                 <div class="w-full px-4 mb-12 md:w-1/3">
-                    <h3 class="font-semibold text-xl text-white mb-5">Kategori tulisan</h3>
+                    <h3 class="font-semibold text-xl text-white mb-5">Writing Category</h3>
                     <ul class="text-slate-300">
                         <li>
                             <a href="#" class="inline-block text-base hover:text-primary mb-3">Programming</a>
@@ -332,19 +386,19 @@
                     <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
                     <ul class="text-slate-300">
                         <li>
-                            <a href="#home" class="inline-block text-base hover:text-primary mb-3">Beranda</a>
+                            <a href="#home" class="inline-block text-base hover:text-primary mb-3">Home</a>
                         </li>
                         <li>
-                            <a href="#about" class="inline-block text-base hover:text-primary mb-3">Tentang Saya</a>
+                            <a href="#about" class="inline-block text-base hover:text-primary mb-3">About Me</a>
                         </li>
                         <li>
                             <a href="#portfolio" class="inline-block text-base hover:text-primary mb-3">Portfolio</a>
                         </li>
                         <li>
-                            <a href="#clients" class="inline-block text-base hover:text-primary mb-3">Clients</a>
+                            <a href="#clients" class="inline-block text-base hover:text-primary mb-3">Experience</a>
                         </li>
                         <li>
-                            <a href="#blog" class="inline-block text-base hover:text-primary mb-3">Blog</a>
+                            <a href="#blog" class="inline-block text-base hover:text-primary mb-3">Certificate</a>
                         </li>
                         <li>
                             <a href="#contact" class="inline-block text-base hover:text-primary mb-3">Contact</a>
@@ -388,6 +442,10 @@
     </a>
     <!-- Back to Top End -->
 
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Main Script Must Bottom -->
     <script src="dist/js/script.js"></script>
 </body>
 </html>

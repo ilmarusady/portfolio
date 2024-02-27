@@ -52,3 +52,42 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
   } else {
     darkToggle.checked = true;
   }
+
+// typewriter
+var typed = new Typed('#typewriter', {
+    strings: ["Web Developer", "Coder", "Tech Antusiast"],
+    typeSpeed: 60,
+    backSpeed: 50,
+    loop: true,
+    // startDelay : 1000,
+    backDelay : 1700
+  });
+
+// Swiper.js
+let swiper = new Swiper(".mySwiper", {
+    // cssMode: true,
+    // slidesPerView : 3,
+    spaceBetween : 24,
+    grabCursor : true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    breakpoints: {
+        768: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: -3,
+        },
+        1024: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: -3,
+        },
+    },
+    mousewheel: true,
+    keyboard: true,
+});
